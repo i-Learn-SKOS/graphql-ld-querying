@@ -17,7 +17,7 @@ See [public usage](README.md#usage), however:
 ## Publishing
 
 - Update version in package.json
-- Commit, push and tag with the version from package.json
+- Commit, push and tag with the version from package.json (v1.0.0 for package.json 1.0.0)
 - Execute:
 ```
 npm login

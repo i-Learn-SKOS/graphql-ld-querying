@@ -78,7 +78,8 @@ ln -s node_modules/@ilearn/graphql-ld-querying/examples/ .
 
 ### CLI
 
-Note: the command `graphql-ld-querying` shown below assumes global installation; for local installation, replace it with `node_modules/.bin/graphql-ld-querying`.
+Note: the command `graphql-ld-querying` shown below assumes global installation.
+For local installation, use [npx](https://www.npmjs.com/package/npx): `npx graphql-ld-querying`.
 
 Usage is explained by calling the tool with the `-h` option:
 ```
@@ -128,7 +129,7 @@ graphql-ld-querying -c @examples/1/config.json -q @examples/1/queries/collection
 
 ### Library
 
-(Code valid when placed in this directory):
+Contents for a Javascript file in your project:
 ```
 const {QueryTool} = require('@ilearn/graphql-ld-querying');
 
