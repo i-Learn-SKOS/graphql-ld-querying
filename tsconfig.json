@@ -1,0 +1,24 @@
+{
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "compileOnSave": true,
+  "compilerOptions": {
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "inlineSources": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "outDir": "dist",
+    "declaration": true,
+    "sourceMap": true
+  },
+  "include": [
+    "lib", "bin"
+  ],
+  "exclude": [
+    "**/node_modules"
+  ]
+}

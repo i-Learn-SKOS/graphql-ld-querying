@@ -1,0 +1,7 @@
+{
+  TYPE(_:Collection)
+  id @single
+  prefLabel @single
+  altLabel @optional
+  definition @single @optional
+}

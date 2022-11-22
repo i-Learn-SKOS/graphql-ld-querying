@@ -1,0 +1,64 @@
+{
+  "dataSources": [
+    "https://ilearn-dev.ilabt.imec.be/skosmos/sparql"
+  ],
+  "context": {
+    "id": "@id",
+
+    "TYPE": {"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"},
+    "BOUWSTENEN": {"@id":  "http://ilearn.ilabt.imec.be/vocab/elem/bouwstenen"},
+    "LAGER_ONDERWIJS": {"@id":  "http://ilearn.ilabt.imec.be/vocab/elem/lager-onderwijs"},
+    "LEERGEBIEDEN": {"@id":  "http://ilearn.ilabt.imec.be/vocab/elem/leergebieden"},
+    "ONDERWIJSDOELEN": {"@id": "http://ilearn.ilabt.imec.be/vocab/elem/onddoel"},
+    "ONDERWIJSSTRUCTUUR": {"@id":  "https://w3id.org/onderwijs-vlaanderen/id/collectie/structuur"},
+    "ONDERWIJSSTRUCTUUR_NIVEAU": {"@id":  "https://w3id.org/onderwijs-vlaanderen/id/collectie/niveau"},
+    "ONDERWIJSSTRUCTUUR_SUBNIVEAU": {"@id":  "https://w3id.org/onderwijs-vlaanderen/id/collectie/subniveau"},
+    "ONDERWIJSSTRUCTUUR_ONDERWIJSVORM": {"@id":  "https://w3id.org/onderwijs-vlaanderen/id/collectie/onderwijsvorm"},
+    "ONDERWIJSSTRUCTUUR_OPLEIDINGSVORM": {"@id":  "https://w3id.org/onderwijs-vlaanderen/id/collectie/opleidingsvorm,"},
+    "ONDERWIJSSTRUCTUUR_GRAAD": {"@id":  "https://w3id.org/onderwijs-vlaanderen/id/collectie/graad"},
+    "ONDERWIJSSTRUCTUUR_LEERJAAR": {"@id":  "https://w3id.org/onderwijs-vlaanderen/id/collectie/leerjaar"},
+    "ONDERWIJSSTRUCTUUR_STROOM": {"@id":  "https://w3id.org/onderwijs-vlaanderen/id/collectie/stroom"},
+    "ONDERWIJSSTRUCTUUR_FINALITEIT": {"@id":  "https://w3id.org/onderwijs-vlaanderen/id/collectie/finaliteit"},
+    "SECUNDAIR_ONDERWIJS": {"@id":  "http://ilearn.ilabt.imec.be/vocab/elem/secundair-onderwijs"},
+    "SLEUTELCOMPETENTIES": {"@id":  "http://ilearn.ilabt.imec.be/vocab/elem/sleutelcompetenties"},
+    "SUBDOMEINEN": {"@id":  "http://ilearn.ilabt.imec.be/vocab/elem/subdomeinen"},
+    "THEMAS": {"@id":  "http://ilearn.ilabt.imec.be/vocab/elem/themas"},
+    "TREFWOORDEN": {"@id":  "http://ilearn.ilabt.imec.be/vocab/elem/trefwoorden"},
+    "VAKKEN": {"@id":  "https://w3id.org/onderwijs-vlaanderen/id/collectie/vak"},
+
+    "ConceptScheme": {"@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"},
+    "Collection": {"@id": "http://www.w3.org/2004/02/skos/core#Collection"},
+    "Concept": {"@id": "http://www.w3.org/2004/02/skos/core#Concept"},
+    "prefLabel": {"@id": "http://www.w3.org/2004/02/skos/core#prefLabel", "@language": "nl"},
+    "altLabel": {"@id": "http://www.w3.org/2004/02/skos/core#altLabel", "@language": "nl"},
+    "hiddenLabel": {"@id": "http://www.w3.org/2004/02/skos/core#hiddenLabel", "@language": "nl"},
+    "definition": {"@id": "http://www.w3.org/2004/02/skos/core#definition", "@language": "nl"},
+    "inScheme": {"@id": "http://www.w3.org/2004/02/skos/core#inScheme"},
+    "schemeHas": {"@reverse": "http://www.w3.org/2004/02/skos/core#inScheme"},
+    "topConceptOf": {"@id": "http://www.w3.org/2004/02/skos/core#topConceptOf"},
+    "hasTopConcept": {"@reverse": "http://www.w3.org/2004/02/skos/core#topConceptOf"},
+    "member": {"@id": "http://www.w3.org/2004/02/skos/core#member"},
+    "memberOf": {"@reverse": "http://www.w3.org/2004/02/skos/core#member"},
+    "broader": {"@id": "http://www.w3.org/2004/02/skos/core#broader"},
+    "broaderTransitive": {"@id": "http://www.w3.org/2004/02/skos/core#broaderTransitive"},
+    "narrower": {"@id": "http://www.w3.org/2004/02/skos/core#narrower"},
+    "narrowerTransitive": {"@id": "http://www.w3.org/2004/02/skos/core#narrowerTransitive"},
+    "related": {"@id": "http://www.w3.org/2004/02/skos/core#related"},
+
+    "altLabelXl": {"@id": "http://www.w3.org/2008/05/skos-xl#altLabel"},
+    "LabelXl": {"@id": "http://www.w3.org/2008/05/skos-xl#Label"},
+    "literalForm": {"@id": "http://www.w3.org/2008/05/skos-xl#literalForm", "@language": "nl"},
+
+    "hasCurriculum": {"@id":  "http://semweb.mmlab.be/ns/ilearn#hasCurriculum"},
+    "isCurriculumOf": {"@reverse":  "http://semweb.mmlab.be/ns/ilearn#hasCurriculum"},
+    "typicalAgeRange": {"@id":  "http://semweb.mmlab.be/ns/ilearn#typicalAgeRange"},
+    "isTypicalAgeRangeOf": {"@reverse":  "http://semweb.mmlab.be/ns/ilearn#typicalAgeRange"},
+    "inUseBy": {"@id":  "http://semweb.mmlab.be/ns/ilearn#inUseBy"},
+
+    "logo": {"@id": "http://xmlns.com/foaf/0.1/logo"},
+    "contentUrl": {"@id": "http://schema.org/contentUrl"},
+
+    "dctType": {"@id": "http://purl.org/dc/terms/type"},
+    "SHORTLABEL": {"@id": "http://publications.europa.eu/resource/authority/label-type/SHORTLABEL"}
+  }
+}

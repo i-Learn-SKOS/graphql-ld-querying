@@ -1,0 +1,57 @@
+@prefix elem: <http://ilearn.ilabt.imec.be/vocab/elem/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ocol: <https://w3id.org/onderwijs-vlaanderen/id/collectie/> .
+
+<http://ilearn.ilabt.imec.be/vocab/elem/> a owl:Ontology .
+
+elem:_scheme a skos:ConceptScheme ;
+  skos:prefLabel "elementsoorten"@nl .
+
+elem:lager-onderwijs a skos:Collection ;
+  skos:inScheme elem:_scheme ;
+  skos:prefLabel "lager onderwijs"@nl .
+
+elem:leergebieden a skos:Collection ;
+  skos:inScheme elem:_scheme ;
+  skos:prefLabel "leergebieden"@nl .
+
+elem:subdomeinen a skos:Collection ;
+  skos:inScheme elem:_scheme ;
+  skos:prefLabel "subdomeinen"@nl .
+
+elem:themas a skos:Collection ;
+  skos:inScheme elem:_scheme ;
+  skos:prefLabel "thema's"@nl .
+
+elem:secundair-onderwijs a skos:Collection ;
+  skos:inScheme elem:_scheme ;
+  skos:prefLabel "secundair onderwijs"@nl .
+
+elem:sleutelcompetenties a skos:Collection ;
+  skos:inScheme elem:_scheme ;
+  skos:prefLabel "sleutelcompetenties"@nl .
+
+elem:bouwstenen a skos:Collection ;
+  skos:inScheme elem:_scheme ;
+  skos:prefLabel "bouwstenen"@nl .
+
+ocol:vak skos:inScheme elem:_scheme.
+
+elem:trefwoorden a skos:Collection ;
+  skos:inScheme elem:_scheme ;
+  skos:prefLabel "trefwoorden"@nl .
+
+ocol:structuur skos:inScheme elem:_scheme .
+ocol:niveau skos:inScheme elem:_scheme .
+ocol:subniveau skos:inScheme elem:_scheme .
+ocol:onderwijsvorm skos:inScheme elem:_scheme .
+ocol:opleidingsvorm skos:inScheme elem:_scheme .
+ocol:graad skos:inScheme elem:_scheme .
+ocol:leerjaar skos:inScheme elem:_scheme .
+ocol:stroom skos:inScheme elem:_scheme .
+ocol:finaliteit skos:inScheme elem:_scheme .
+
+elem:onddoel a skos:Collection ;
+  skos:inScheme elem:_scheme ;
+  skos:prefLabel "onderwijsdoelen"@nl .

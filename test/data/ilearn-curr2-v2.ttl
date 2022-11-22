@@ -1,0 +1,667 @@
+#############################################################################
+# This file contains curriculum concepts applicable to LAGER ONDERWIJS only #
+#############################################################################
+@prefix curr2: <http://ilearn.ilabt.imec.be/vocab/curr2/> .
+@prefix elem: <http://ilearn.ilabt.imec.be/vocab/elem/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://ilearn.ilabt.imec.be/vocab/curr2/> a owl:Ontology .
+
+curr2:_scheme a skos:ConceptScheme ;
+  skos:prefLabel "curriculum lager onderwijs"@nl .
+
+###### niveau 1: (l)eergebieden
+######   alle URIs: curr2:l-[a-z-]+
+######   alle skos:notations: l-[a-z-]+
+
+curr2:l-wiskunde a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+  skos:topConceptOf curr2:_scheme ;
+#  skos:notation "l-wiskunde" ;
+  skos:prefLabel "wiskunde"@nl .
+elem:lager-onderwijs skos:member curr2:l-wiskunde .
+elem:leergebieden skos:member curr2:l-wiskunde .
+
+curr2:l-nederlands a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+  skos:topConceptOf curr2:_scheme ;
+#  skos:notation "l-nederlands" ;
+  skos:prefLabel "Nederlands"@nl .
+elem:lager-onderwijs skos:member curr2:l-nederlands .
+elem:leergebieden skos:member curr2:l-nederlands .
+
+curr2:l-frans a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+  skos:topConceptOf curr2:_scheme ;
+#  skos:notation "l-frans" ;
+  skos:prefLabel "Frans"@nl .
+elem:lager-onderwijs skos:member curr2:l-frans .
+elem:leergebieden skos:member curr2:l-frans .
+
+curr2:l-mens-en-maatschappij a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+  skos:topConceptOf curr2:_scheme ;
+#  skos:notation "l-mens-en-maatschappij" ;
+  skos:prefLabel "mens en maatschappij"@nl .
+elem:lager-onderwijs skos:member curr2:l-mens-en-maatschappij .
+elem:leergebieden skos:member curr2:l-mens-en-maatschappij .
+
+curr2:l-muzische-vorming a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+  skos:topConceptOf curr2:_scheme ;
+#  skos:notation "l-muzische-vorming" ;
+  skos:prefLabel "muzische vorming"@nl .
+elem:lager-onderwijs skos:member curr2:l-muzische-vorming .
+elem:leergebieden skos:member curr2:l-muzische-vorming .
+
+curr2:l-wetenschap-en-techniek a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+  skos:topConceptOf curr2:_scheme ;
+#  skos:notation "l-wetenschap-en-techniek" ;
+  skos:prefLabel "wetenschap en techniek"@nl .
+elem:lager-onderwijs skos:member curr2:l-wetenschap-en-techniek .
+elem:leergebieden skos:member curr2:l-wetenschap-en-techniek .
+
+curr2:l-ict a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+  skos:topConceptOf curr2:_scheme ;
+#  skos:notation "l-ict" ;
+  skos:prefLabel "ICT"@nl .
+elem:lager-onderwijs skos:member curr2:l-ict .
+elem:leergebieden skos:member curr2:l-ict .
+
+curr2:l-levensbeschouwelijke-vakken a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+  skos:topConceptOf curr2:_scheme ;
+#  skos:notation "l-levensbeschouwelijke-vakken" ;
+  skos:prefLabel "levensbeschouwelijke vakken"@nl .
+elem:lager-onderwijs skos:member curr2:l-levensbeschouwelijke-vakken .
+elem:leergebieden skos:member curr2:l-levensbeschouwelijke-vakken .
+
+curr2:l-lichamelijke-opvoeding a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+  skos:topConceptOf curr2:_scheme ;
+#  skos:notation "l-lichamelijke-opvoeding" ;
+  skos:prefLabel "lichamelijke opvoeding"@nl .
+elem:lager-onderwijs skos:member curr2:l-lichamelijke-opvoeding .
+elem:leergebieden skos:member curr2:l-lichamelijke-opvoeding .
+
+curr2:l-leren-leren a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+  skos:topConceptOf curr2:_scheme ;
+#  skos:notation "l-leren-leren" ;
+  skos:prefLabel "leren leren"@nl .
+elem:lager-onderwijs skos:member curr2:l-leren-leren .
+elem:leergebieden skos:member curr2:l-leren-leren .
+
+curr2:l-sociale-vaardigheden a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+  skos:topConceptOf curr2:_scheme ;
+#  skos:notation "l-sociale-vaardigheden" ;
+  skos:prefLabel "sociale vaardigheden"@nl .
+elem:lager-onderwijs skos:member curr2:l-sociale-vaardigheden .
+elem:leergebieden skos:member curr2:l-sociale-vaardigheden .
+
+curr2:l-extra-curriculair a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+  skos:topConceptOf curr2:_scheme ;
+#  skos:notation "l-extra-curriculair" ;
+  skos:prefLabel "extracurriculair"@nl .
+elem:lager-onderwijs skos:member curr2:l-extra-curriculair .
+elem:leergebieden skos:member curr2:l-extra-curriculair .
+
+###### niveau 2: (s)ubdomeinen
+######   alle URIs: curr2:s-[a-z-]+
+######   alle skos:notations: s-[a-z-]+
+
+curr2:s-getallen a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+  skos:prefLabel "getallen"@nl ;
+#  skos:notation "s-getallen" ;
+  skos:broader curr2:l-wiskunde .
+elem:lager-onderwijs skos:member curr2:s-getallen .
+elem:subdomeinen skos:member curr2:s-getallen .
+
+curr2:s-meten a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+  skos:prefLabel "meten"@nl ;
+  skos:broader curr2:l-wiskunde ;
+#  skos:notation "s-meten" ;
+  skos:related curr2:s-tijd .
+elem:lager-onderwijs skos:member curr2:s-meten .
+elem:subdomeinen skos:member curr2:s-meten .
+
+curr2:s-meetkunde a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-meetkunde" ;
+  skos:prefLabel "meetkunde"@nl ;
+  skos:broader curr2:l-wiskunde .
+elem:lager-onderwijs skos:member curr2:s-meetkunde .
+elem:subdomeinen skos:member curr2:s-meetkunde .
+
+curr2:s-stratprobv a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-stratprobv" ;
+  skos:prefLabel "strategieën en probleemoplossende vaardigheden"@nl ;
+  skos:broader curr2:l-wiskunde ;
+  skos:related curr2:s-getallen,
+    curr2:s-meten,
+    curr2:s-meetkunde .
+elem:lager-onderwijs skos:member curr2:s-stratprobv .
+elem:subdomeinen skos:member curr2:s-stratprobv .
+
+curr2:s-luisteren a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-luisteren" ;
+  skos:prefLabel "luisteren (Nederlands)"@nl ;
+  skos:broader curr2:l-nederlands .
+elem:lager-onderwijs skos:member curr2:s-luisteren .
+elem:subdomeinen skos:member curr2:s-luisteren .
+
+curr2:s-fr-luisteren a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-fr-luisteren" ;
+  skos:prefLabel "luisteren (Frans)"@nl ;
+  skos:broader curr2:l-frans .
+elem:lager-onderwijs skos:member curr2:s-fr-luisteren .
+elem:subdomeinen skos:member curr2:s-fr-luisteren .
+
+curr2:s-spreken a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-spreken" ;
+  skos:prefLabel "spreken (Nederlands)"@nl ;
+  skos:broader curr2:l-nederlands .
+elem:lager-onderwijs skos:member curr2:s-spreken .
+elem:subdomeinen skos:member curr2:s-spreken .
+
+curr2:s-fr-spreken a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-fr-spreken" ;
+  skos:prefLabel "spreken (Frans)"@nl ;
+  skos:broader curr2:l-frans .
+elem:lager-onderwijs skos:member curr2:s-fr-spreken .
+elem:subdomeinen skos:member curr2:s-fr-spreken .
+
+curr2:s-lezen a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-lezen" ;
+  skos:prefLabel "lezen (Nederlands)"@nl ;
+  skos:broader curr2:l-nederlands .
+elem:lager-onderwijs skos:member curr2:s-lezen .
+elem:subdomeinen skos:member curr2:s-lezen .
+
+curr2:s-fr-lezen a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-fr-lezen" ;
+  skos:prefLabel "lezen (Frans)"@nl ;
+  skos:broader curr2:l-frans .
+elem:lager-onderwijs skos:member curr2:s-fr-lezen .
+elem:subdomeinen skos:member curr2:s-fr-lezen .
+
+curr2:s-schrijven a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-schrijven" ;
+  skos:prefLabel "schrijven (Nederlands)"@nl ;
+  skos:broader curr2:l-nederlands .
+elem:lager-onderwijs skos:member curr2:s-schrijven .
+elem:subdomeinen skos:member curr2:s-schrijven .
+
+curr2:s-fr-schrijven a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-fr-schrijven" ;
+  skos:prefLabel "schrijven (Frans)"@nl ;
+  skos:broader curr2:l-frans .
+elem:lager-onderwijs skos:member curr2:s-fr-schrijven .
+elem:subdomeinen skos:member curr2:s-fr-schrijven .
+
+curr2:s-strategieen a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-strategieen" ;
+  skos:prefLabel "strategieën"@nl ;
+  skos:broader curr2:l-nederlands .
+elem:lager-onderwijs skos:member curr2:s-strategieen .
+elem:subdomeinen skos:member curr2:s-strategieen .
+
+curr2:s-taalbeschouwing a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-taalbeschouwing" ;
+  skos:prefLabel "taalbeschouwing"@nl ;
+  skos:broader curr2:l-nederlands .
+elem:lager-onderwijs skos:member curr2:s-taalbeschouwing .
+elem:subdomeinen skos:member curr2:s-taalbeschouwing .
+
+curr2:s-culturele-gerichtheid a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-culturele-gerichtheid" ;
+  skos:prefLabel "(inter)culturele gerichtheid"@nl ;
+  skos:broader curr2:l-nederlands .
+elem:lager-onderwijs skos:member curr2:s-culturele-gerichtheid .
+elem:subdomeinen skos:member curr2:s-culturele-gerichtheid .
+
+curr2:s-mondelinge-interactie a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-mondelinge-interactie" ;
+  skos:prefLabel "mondelinge interactie"@nl ;
+  skos:broader curr2:l-frans .
+elem:lager-onderwijs skos:member curr2:s-mondelinge-interactie .
+elem:subdomeinen skos:member curr2:s-mondelinge-interactie .
+
+curr2:s-mens a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-mens" ;
+  skos:prefLabel "mens"@nl ;
+  skos:broader curr2:l-mens-en-maatschappij .
+elem:lager-onderwijs skos:member curr2:s-mens .
+elem:subdomeinen skos:member curr2:s-mens .
+
+curr2:s-maatschappij a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-maatschappij" ;
+  skos:prefLabel "maatschappij"@nl ;
+  skos:broader curr2:l-mens-en-maatschappij .
+elem:lager-onderwijs skos:member curr2:s-maatschappij .
+elem:subdomeinen skos:member curr2:s-maatschappij .
+
+curr2:s-tijd a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-tijd" ;
+  skos:prefLabel "tijd"@nl ;
+  skos:broader curr2:l-mens-en-maatschappij .
+elem:lager-onderwijs skos:member curr2:s-tijd .
+elem:subdomeinen skos:member curr2:s-tijd .
+
+curr2:s-ruimte a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-ruimte" ;
+  skos:prefLabel "ruimte"@nl ;
+  skos:broader curr2:l-mens-en-maatschappij .
+elem:lager-onderwijs skos:member curr2:s-ruimte .
+elem:subdomeinen skos:member curr2:s-ruimte .
+
+curr2:s-brongebruik a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-brongebruik" ;
+  skos:prefLabel "brongebruik"@nl ;
+  skos:broader curr2:l-mens-en-maatschappij .
+elem:lager-onderwijs skos:member curr2:s-brongebruik .
+elem:subdomeinen skos:member curr2:s-brongebruik .
+
+curr2:s-beeld a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-beeld" ;
+  skos:prefLabel "beeld"@nl ;
+  skos:broader curr2:l-muzische-vorming .
+elem:lager-onderwijs skos:member curr2:s-beeld .
+elem:subdomeinen skos:member curr2:s-beeld .
+
+curr2:s-muziek a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-muziek" ;
+  skos:prefLabel "muziek"@nl ;
+  skos:broader curr2:l-muzische-vorming .
+elem:lager-onderwijs skos:member curr2:s-muziek .
+elem:subdomeinen skos:member curr2:s-muziek .
+
+curr2:s-drama a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-drama" ;
+  skos:prefLabel "drama"@nl ;
+  skos:broader curr2:l-muzische-vorming .
+elem:lager-onderwijs skos:member curr2:s-drama .
+elem:subdomeinen skos:member curr2:s-drama .
+
+curr2:s-beweging a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-beweging" ;
+  skos:prefLabel "beweging"@nl ;
+  skos:broader curr2:l-muzische-vorming .
+elem:lager-onderwijs skos:member curr2:s-beweging .
+elem:subdomeinen skos:member curr2:s-beweging .
+
+curr2:s-media a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-media" ;
+  skos:prefLabel "media"@nl ;
+  skos:broader curr2:l-muzische-vorming ;
+  skos:related curr2:l-nederlands,
+    curr2:l-frans,
+    curr2:l-wiskunde,
+    curr2:l-mens-en-maatschappij,
+    curr2:l-wetenschap-en-techniek,
+    curr2:l-lichamelijke-opvoeding .
+elem:lager-onderwijs skos:member curr2:s-media .
+elem:subdomeinen skos:member curr2:s-media .
+
+curr2:s-natuur a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-natuur" ;
+  skos:prefLabel "natuur"@nl ;
+  skos:broader curr2:l-wetenschap-en-techniek .
+elem:lager-onderwijs skos:member curr2:s-natuur .
+elem:subdomeinen skos:member curr2:s-natuur .
+
+curr2:s-techniek a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-techniek" ;
+  skos:prefLabel "techniek"@nl ;
+  skos:broader curr2:l-wetenschap-en-techniek .
+elem:lager-onderwijs skos:member curr2:s-techniek .
+elem:subdomeinen skos:member curr2:s-techniek .
+
+curr2:s-ict a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-ict" ;
+  skos:prefLabel "ICT"@nl ;
+  skos:broader curr2:l-ict .
+elem:lager-onderwijs skos:member curr2:s-ict .
+elem:subdomeinen skos:member curr2:s-ict .
+
+curr2:s-niet-confessionele-zedenleer a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-niet-confessionele-zedenleer" ;
+  skos:prefLabel "niet-confessionele zedenleer"@nl ;
+  skos:broader curr2:l-levensbeschouwelijke-vakken .
+elem:lager-onderwijs skos:member curr2:s-niet-confessionele-zedenleer .
+elem:subdomeinen skos:member curr2:s-niet-confessionele-zedenleer .
+
+curr2:s-godsdienst a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-godsdienst" ;
+  skos:prefLabel "godsdienst"@nl ;
+  skos:broader curr2:l-levensbeschouwelijke-vakken .
+elem:lager-onderwijs skos:member curr2:s-godsdienst .
+elem:subdomeinen skos:member curr2:s-godsdienst .
+
+curr2:s-lichamelijke-opvoeding a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-lichamelijke-opvoeding" ;
+  skos:prefLabel "lichamelijke opvoeding"@nl ;
+  skos:broader curr2:l-lichamelijke-opvoeding .
+elem:lager-onderwijs skos:member curr2:s-lichamelijke-opvoeding .
+elem:subdomeinen skos:member curr2:s-lichamelijke-opvoeding .
+
+curr2:s-leren-leren a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-leren-leren" ;
+  skos:prefLabel "leren leren"@nl ;
+  skos:broader curr2:l-leren-leren .
+elem:lager-onderwijs skos:member curr2:s-leren-leren .
+elem:subdomeinen skos:member curr2:s-leren-leren .
+
+curr2:s-sociale-vaardigheden a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-sociale-vaardigheden" ;
+  skos:prefLabel "sociale vaardigheden"@nl ;
+  skos:broader curr2:l-sociale-vaardigheden .
+elem:lager-onderwijs skos:member curr2:s-sociale-vaardigheden .
+elem:subdomeinen skos:member curr2:s-sociale-vaardigheden .
+
+curr2:s-extra-curriculair a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "s-extra-curriculair" ;
+  skos:prefLabel "extracurriculair"@nl ;
+  skos:broader curr2:l-extra-curriculair .
+elem:lager-onderwijs skos:member curr2:s-extra-curriculair .
+elem:subdomeinen skos:member curr2:s-extra-curriculair .
+
+###### niveau 3: (t)hema's
+######   alle URIs: curr2:t-[a-z-]+
+######   alle skos:notations: t-[a-z-]+
+
+curr2:t-ik-en-mezelf a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-ik-en-mezelf" ;
+  skos:prefLabel "ik en mezelf"@nl ;
+  skos:broader curr2:s-mens .
+elem:lager-onderwijs skos:member curr2:t-ik-en-mezelf .
+elem:themas skos:member curr2:t-ik-en-mezelf .
+
+curr2:t-ik-en-de-ander a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-ik-en-de-ander" ;
+  skos:prefLabel "ik en de ander"@nl ;
+  skos:broader curr2:s-mens .
+elem:lager-onderwijs skos:member curr2:t-ik-en-de-ander .
+elem:themas skos:member curr2:t-ik-en-de-ander .
+
+curr2:t-ik-en-de-anderen-in-groep a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-ik-en-de-anderen-in-groep" ;
+  skos:prefLabel "ik en de anderen in groep"@nl ;
+  skos:broader curr2:s-mens .
+elem:lager-onderwijs skos:member curr2:t-ik-en-de-anderen-in-groep .
+elem:themas skos:member curr2:t-ik-en-de-anderen-in-groep .
+
+curr2:t-sociaal-economische-verschijnselen a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-sociaal-economische-verschijnselen" ;
+  skos:prefLabel "sociaal-economische verschijnselen"@nl ;
+  skos:broader curr2:s-maatschappij .
+elem:lager-onderwijs skos:member curr2:t-sociaal-economische-verschijnselen .
+elem:themas skos:member curr2:t-sociaal-economische-verschijnselen .
+
+curr2:t-sociaal-culturele-verschijnselen a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-sociaal-culturele-verschijnselen" ;
+  skos:prefLabel "sociaal-culturele verschijnselen"@nl ;
+  skos:broader curr2:s-maatschappij .
+elem:lager-onderwijs skos:member curr2:t-sociaal-culturele-verschijnselen .
+elem:themas skos:member curr2:t-sociaal-culturele-verschijnselen .
+
+curr2:t-politieke-en-juridische-verschijnselen a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-politieke-en-juridische-verschijnselen" ;
+  skos:prefLabel "politieke en juridische verschijnselen"@nl ;
+  skos:broader curr2:s-maatschappij .
+elem:lager-onderwijs skos:member curr2:t-politieke-en-juridische-verschijnselen .
+elem:themas skos:member curr2:t-politieke-en-juridische-verschijnselen .
+
+curr2:t-dagelijkse-tijd a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-dagelijkse-tijd" ;
+  skos:prefLabel "dagelijkse tijd"@nl ;
+  skos:broader curr2:s-tijd ;
+  skos:related curr2:s-meten .
+elem:lager-onderwijs skos:member curr2:t-dagelijkse-tijd .
+elem:themas skos:member curr2:t-dagelijkse-tijd .
+
+curr2:t-historische-tijd a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-historische-tijd" ;
+  skos:prefLabel "historische tijd"@nl ;
+  skos:broader curr2:s-tijd .
+elem:lager-onderwijs skos:member curr2:t-historische-tijd .
+elem:themas skos:member curr2:t-historische-tijd .
+
+curr2:t-algemene-vaardigheden-tijd a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-algemene-vaardigheden-tijd" ;
+  skos:prefLabel "algemene vaardigheden tijd"@nl ;
+  skos:broader curr2:s-tijd .
+elem:lager-onderwijs skos:member curr2:t-algemene-vaardigheden-tijd .
+elem:themas skos:member curr2:t-algemene-vaardigheden-tijd .
+
+curr2:t-orientatie-en-kaartvaardigheid a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-orientatie-en-kaartvaardigheid" ;
+  skos:prefLabel "oriëntatie- en kaartvaardigheid"@nl ;
+  skos:broader curr2:s-ruimte ;
+  skos:related curr2:s-meten .
+elem:lager-onderwijs skos:member curr2:t-orientatie-en-kaartvaardigheid .
+elem:themas skos:member curr2:t-orientatie-en-kaartvaardigheid .
+
+curr2:t-ruimtebeleving a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-ruimtebeleving" ;
+  skos:prefLabel "ruimtebeleving"@nl ;
+  skos:broader curr2:s-ruimte ;
+  skos:related curr2:l-lichamelijke-opvoeding .
+elem:lager-onderwijs skos:member curr2:t-ruimtebeleving .
+elem:themas skos:member curr2:t-ruimtebeleving .
+
+curr2:t-ruimtelijke-ordening a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-ruimtelijke-ordening" ;
+  skos:prefLabel "ruimtelijke ordening/bepaaldheid"@nl ;
+  skos:broader curr2:s-ruimte .
+elem:lager-onderwijs skos:member curr2:t-ruimtelijke-ordening .
+elem:themas skos:member curr2:t-ruimtelijke-ordening .
+
+curr2:t-algemene-vaardigheden-ruimte a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-algemene-vaardigheden-ruimte" ;
+  skos:prefLabel "algemene vaardigheden ruimte"@nl ;
+  skos:broader curr2:s-ruimte .
+elem:lager-onderwijs skos:member curr2:t-algemene-vaardigheden-ruimte .
+elem:themas skos:member curr2:t-algemene-vaardigheden-ruimte .
+
+curr2:t-verkeer-en-mobiliteit a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-verkeer-en-mobiliteit" ;
+  skos:prefLabel "verkeer en mobiliteit"@nl ;
+  skos:broader curr2:s-ruimte .
+elem:lager-onderwijs skos:member curr2:t-verkeer-en-mobiliteit .
+elem:themas skos:member curr2:t-verkeer-en-mobiliteit .
+
+curr2:t-algemene-vaardigheden a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-algemene-vaardigheden" ;
+  skos:prefLabel "algemene vaardigheden"@nl ;
+  skos:broader curr2:s-natuur .
+elem:lager-onderwijs skos:member curr2:t-algemene-vaardigheden .
+elem:themas skos:member curr2:t-algemene-vaardigheden .
+
+curr2:t-levende-en-niet-levende-natuur a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-levende-en-niet-levende-natuur" ;
+  skos:prefLabel "levende en niet-levende natuur"@nl ;
+  skos:broader curr2:s-natuur ;
+  skos:related curr2:s-meten,
+    curr2:s-ruimte .
+elem:lager-onderwijs skos:member curr2:t-levende-en-niet-levende-natuur .
+elem:themas skos:member curr2:t-levende-en-niet-levende-natuur .
+
+curr2:t-gezondheid a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-gezondheid" ;
+  skos:prefLabel "gezondheid"@nl ;
+  skos:broader curr2:s-natuur .
+elem:lager-onderwijs skos:member curr2:t-gezondheid .
+elem:themas skos:member curr2:t-gezondheid .
+
+curr2:t-milieu a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-milieu" ;
+  skos:prefLabel "milieu"@nl ;
+  skos:broader curr2:s-natuur .
+elem:lager-onderwijs skos:member curr2:t-milieu .
+elem:themas skos:member curr2:t-milieu .
+
+curr2:t-kerncomponenten-van-techniek a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-kerncomponenten-van-techniek" ;
+  skos:prefLabel "kerncomponenten van techniek"@nl ;
+  skos:broader curr2:s-techniek ;
+  skos:related curr2:l-mens-en-maatschappij .
+elem:lager-onderwijs skos:member curr2:t-kerncomponenten-van-techniek .
+elem:themas skos:member curr2:t-kerncomponenten-van-techniek .
+
+curr2:t-techniek-als-menselijke-activiteit a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-techniek-als-menselijke-activiteit" ;
+  skos:prefLabel "techniek als menselijke activiteit"@nl ;
+  skos:broader curr2:s-techniek ;
+  skos:related curr2:l-mens-en-maatschappij .
+elem:lager-onderwijs skos:member curr2:t-techniek-als-menselijke-activiteit .
+elem:themas skos:member curr2:t-techniek-als-menselijke-activiteit .
+
+curr2:t-techniek-en-samenleving a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-techniek-en-samenleving" ;
+  skos:prefLabel "techniek en samenleving"@nl ;
+  skos:broader curr2:s-techniek ;
+  skos:related curr2:l-mens-en-maatschappij .
+elem:lager-onderwijs skos:member curr2:t-techniek-en-samenleving .
+elem:themas skos:member curr2:t-techniek-en-samenleving .
+
+curr2:t-ict a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-ict" ;
+  skos:prefLabel "ICT"@nl ;
+  skos:broader curr2:s-ict ;
+  skos:related curr2:s-media .
+elem:lager-onderwijs skos:member curr2:t-ict .
+elem:themas skos:member curr2:t-ict .
+
+curr2:t-rooms-katholieke a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-rooms-katholieke" ;
+  skos:prefLabel "rooms-katholieke"@nl ;
+  skos:broader curr2:s-godsdienst .
+elem:lager-onderwijs skos:member curr2:t-rooms-katholieke .
+elem:themas skos:member curr2:t-rooms-katholieke .
+
+curr2:t-anglicaanse a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-anglicaanse" ;
+  skos:prefLabel "anglicaanse"@nl ;
+  skos:broader curr2:s-godsdienst .
+elem:lager-onderwijs skos:member curr2:t-anglicaanse .
+elem:themas skos:member curr2:t-anglicaanse .
+
+curr2:t-protestants-evangelische a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-protestants-evangelische" ;
+  skos:prefLabel "protestants-evangelische"@nl ;
+  skos:broader curr2:s-godsdienst .
+elem:lager-onderwijs skos:member curr2:t-protestants-evangelische .
+elem:themas skos:member curr2:t-protestants-evangelische .
+
+curr2:t-orthodoxe a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-orthodoxe" ;
+  skos:prefLabel "orthodoxe"@nl ;
+  skos:broader curr2:s-godsdienst .
+elem:lager-onderwijs skos:member curr2:t-orthodoxe .
+elem:themas skos:member curr2:t-orthodoxe .
+
+curr2:t-islamitische a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-islamitische" ;
+  skos:prefLabel "islamitische"@nl ;
+  skos:broader curr2:s-godsdienst .
+elem:lager-onderwijs skos:member curr2:t-islamitische .
+elem:themas skos:member curr2:t-islamitische .
+
+curr2:t-israelitische a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-israelitische" ;
+  skos:prefLabel "israëlitische"@nl ;
+  skos:broader curr2:s-godsdienst .
+elem:lager-onderwijs skos:member curr2:t-israelitische .
+elem:themas skos:member curr2:t-israelitische .
+
+curr2:t-leren-leren a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-leren-leren" ;
+  skos:prefLabel "leren leren"@nl ;
+  skos:broader curr2:s-leren-leren .
+elem:lager-onderwijs skos:member curr2:t-leren-leren .
+elem:themas skos:member curr2:t-leren-leren .
+
+curr2:t-sociale-vaardigheden a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-sociale-vaardigheden" ;
+  skos:prefLabel "sociale vaardigheden"@nl ;
+  skos:broader curr2:s-sociale-vaardigheden .
+elem:lager-onderwijs skos:member curr2:t-sociale-vaardigheden .
+elem:themas skos:member curr2:t-sociale-vaardigheden .
+
+curr2:t-extra-curriculair a skos:Concept ;
+  skos:inScheme curr2:_scheme ;
+#  skos:notation "t-extra-curriculair" ;
+  skos:prefLabel "extracurriculair"@nl ;
+  skos:broader curr2:s-extra-curriculair .
+elem:lager-onderwijs skos:member curr2:t-extra-curriculair .
+elem:themas skos:member curr2:t-extra-curriculair .

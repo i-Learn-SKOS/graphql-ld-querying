@@ -1,0 +1,12 @@
+{
+  id(_:ID) @single
+  prefLabel @single
+  altLabel @optional
+  definition @single @optional
+  member @optional {
+    id @single
+    prefLabel @single
+    altLabel @optional
+    definition @single @optional
+  }
+}
