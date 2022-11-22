@@ -25,5 +25,8 @@ npm publish --dry-run
 ```
 - If above is OK, execute:
 ```
+# first publication:
+npm publish --access=public
+# next publications:
 npm publish
 ```
