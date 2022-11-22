@@ -44,7 +44,7 @@ That extra line for the example:
 "ID": "http://ilearn.ilabt.imec.be/vocab/elem/sleutelcompetenties"
 ```
 This modifying of the context is not practical from the user point of view, who prefers to use one fixed context at all times.
-This package solves this discomfort by providing *parameter context*, that can be given along with a query.
+This package solves this discomfort by providing a *parameter context*, that can be given along with a query.
 This parameter context is then merged with the given fixed context and the resulting merged context is forwarded to Comunica, along with the query.
 
 ## Installation
