@@ -1,6 +1,6 @@
 {
   "name": "@ilearn/graphql-ld-querying",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "GraphQL-LD querying with Comunica; a practical approach",
   "keywords": [
     "comunica",

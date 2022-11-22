@@ -15,9 +15,12 @@ See [public usage](README.md#usage), however:
 - the `examples` directory is already at the right place: nothing to do here
 
 ## Publishing
-
 - Update version in package.json
-- Commit, push and tag with the version from package.json (v1.0.0 for package.json 1.0.0)
+- Build and test
+```
+npm run test
+```
+- Commit, push and tag with the version from package.json (prepended with v, so: v1.0.0 for package.json 1.0.0)
 - Execute:
 ```
 npm login
